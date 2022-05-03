@@ -1,3 +1,14 @@
+# Customization
+This version of Cornerstone has been customized to implement Tailwind in a way that produces a static CSS asset. Summary of changes:
+
+- Installed `tailwindcss` as a dev dependency
+- Added `assets/tailwind/`
+- Added `tailwind.config.js`
+- Modified `build` and `buildDev` npm scripts to incorporate Tailwind CLI
+- Added `dev` and `deploy` npm scripts to incorporate Tailwind CLI in dev and deployment workflows
+- Added stylesheet references to `templates/layout/base.html`
+- Added an `<h1>` element with utility classes to `templates/layout/base.html`
+
 # Cornerstone
 ![tests](https://github.com/bigcommerce/cornerstone/workflows/Theme%20Bundling%20Test/badge.svg?branch=master)
 
