@@ -1,3 +1,13 @@
+# Customization
+This version of Cornerstone has been customized to implement Tailwind in a way that produces a static js asset. Summary of changes:
+
+- Installed `css-loader@5.2.7`, `postcss`, `postcss-loader@4.3.0`, `postcss-preset-env`, `style-loader@2.0.0`, and `tailwindcss` as dev dependencies
+- Added `assets/tailwind/`
+- Added `tailwind.config.js`
+- Added `postcss.config.js`
+- Added script reference to `templates/layout/base.html`
+- Added an `<h1>` element with utility classes to `templates/layout/base.html`
+
 # Cornerstone
 ![tests](https://github.com/bigcommerce/cornerstone/workflows/Theme%20Bundling%20Test/badge.svg?branch=master)
 

@@ -25,6 +25,7 @@
             window.lazySizesConfig.loadMode = 1;
         </script>
         <script async src="{{cdn 'assets/dist/theme-bundle.head_async.js'}}"></script>
+        <script async src="{{cdn 'assets/dist/theme-bundle.tailwind.js'}}"></script>
         
         {{getFontsCollection font-display='block'}}
         
@@ -56,6 +57,7 @@
         <svg data-src="{{cdn 'img/icon-sprite.svg'}}" class="icons-svg-sprite"></svg>
 
         {{> components/common/header }}
+        <h1 class="text-3xl text-red-500">Hello Tailwind</h1>
         {{> components/common/body }}
         {{> components/common/footer }}
 
