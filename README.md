@@ -6,7 +6,7 @@ This version of Cornerstone has been customized to implement Tailwind in a way t
 - Added `tailwind.config.js`
 - Added `postcss.config.js`
 - Added script reference to `templates/layout/base.html`
-- Added an `<h1>` element with utility classes to `templates/layout/base.html`
+- Modified the templates in `templates/layout/base.html`, `templates/components/common/header.html` and `templates/pages/home.html` to use a modified version of the [Landing Page template from tailwindtoolbox](https://github.com/tailwindtoolbox/Landing-Page) for performance testing
 
 # Cornerstone
 ![tests](https://github.com/bigcommerce/cornerstone/workflows/Theme%20Bundling%20Test/badge.svg?branch=master)
