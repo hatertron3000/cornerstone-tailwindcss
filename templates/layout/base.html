@@ -32,6 +32,7 @@
         <script async src="{{cdn 'assets/dist/theme-bundle.font.js'}}"></script>
 
         {{{stylesheet '/assets/css/theme.css'}}}
+        {{{stylesheet '/assets/tailwind/theme.css'}}}
 
         {{{head.scripts}}}
 
@@ -56,6 +57,7 @@
         <svg data-src="{{cdn 'img/icon-sprite.svg'}}" class="icons-svg-sprite"></svg>
 
         {{> components/common/header }}
+        <h1 class="text-3xl text-red-500 font-bold">Hello Tailwind</h1>
         {{> components/common/body }}
         {{> components/common/footer }}
 
