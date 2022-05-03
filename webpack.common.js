@@ -13,9 +13,15 @@ module.exports = {
         head_async: ['lazysizes'],
         font: './assets/js/theme/common/font.js',
         polyfills: './assets/js/polyfills.js',
+        tailwind: './assets/tailwind/tailwind.css',
     },
     module: {
         rules: [
+            {
+                test: /\.css$/,
+                include: /assets\/tailwind/,
+                use: ['style-loader', 'css-loader', 'postcss-loader']
+            },
             {
                 test: /\.js$/,
                 include: /(assets\/js|assets\\js|stencil-utils)/,

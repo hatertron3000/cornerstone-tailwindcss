@@ -25,6 +25,7 @@
             window.lazySizesConfig.loadMode = 1;
         </script>
         <script async src="{{cdn 'assets/dist/theme-bundle.head_async.js'}}"></script>
+        <script async src="{{cdn 'assets/dist/theme-bundle.tailwind.js'}}"></script>
         
         {{getFontsCollection font-display='block'}}
         
@@ -51,13 +52,19 @@
 
         {{!-- Get this loading ASAP --}}
         <link rel="preload" href="{{cdn 'assets/dist/theme-bundle.main.js'}}" as="script">
+    <style>
+        .gradient {
+            background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+        }
+    </style>
     </head>
-    <body>
+    
+    <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
         <svg data-src="{{cdn 'img/icon-sprite.svg'}}" class="icons-svg-sprite"></svg>
 
         {{> components/common/header }}
         {{> components/common/body }}
-        {{> components/common/footer }}
+        {{!-- > components/common/footer --}}
 
         <script>window.__webpack_public_path__ = "{{cdn 'assets/dist/'}}";</script>
         <script>
