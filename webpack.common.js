@@ -19,7 +19,7 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/,
-                include: /assets\/tailwind/,
+                // include: /assets\/tailwind/,
                 use: ['style-loader', 'css-loader', 'postcss-loader']
             },
             {
